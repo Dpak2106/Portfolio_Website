@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MY PORTFOLIO </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(84, 28, 238);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            ;
+        }
+
+        nav ul li a:hover {
+            color: red;
+            font-size: 1.10rem;
+        }
+
+        main hr {
+            border: 0;
+            background: white;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.4rem;
+
+        }
+
+        .leftSection .btn {
+    font-size: 1rem;
+    padding: 12px;
+    background-color: rgb(42, 42, 156); /* Change the background color to white */
+    color: white; /* Change the text color to black */
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for a smooth hover effect */
+}
+
+.leftSection .btn:hover {
+    background-color: #533483; /* Change the background color on hover */
+    color: white; /* Change the text color on hover */
+}
+
+.leftSection .btn a {
+    color: white; /* Change the link color to black */
+    text-decoration: none; /* Ensure the link text has no underline */
+}
+
+.leftSection .btn:hover a {
+    color: black; /* Change the link color to white on hover */
+}
+
+
+        .rightSection img {
+            width: 90%;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: gray;
+            font-size: 1.5rem;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 0.5px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 80px;
+            width: 1.5px;
+            background-color: white;
+            margin: 0 90px;
+        }
+
+        .image-top {
+            width: 40px;
+            position: relative;
+            top: -42px;
+            left: -15px;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 40px;
+            width: 150px;
+            text-align: left;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 40px;
+            width: 150px;
+            color: rgb(210, 190, 190);
+            font-size: 9px;
+            text-align: left;
+        }
+
+        footer {
+            background-color: rgb(8, 10, 51);
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer {
+    background-color: rgb(8, 10, 51);
+    color: white; /* Set the text color to white */
+}
+
+.footer-right {
+    text-align: center;
+    color: white; /* Set the text color to white */
+    padding: 12px 0;
+}
+
+.footer ul li a {
+    color: white; /* Set the link color to white */
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: lightgray; /* Optional: change the link color on hover */
+}
+
+        .contact__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact__form {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.contact__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #162447;
+    color: #e6e6e6;
+    font-size: 16px;
+}
+
+.contact__input::placeholder {
+    color: #818181;
+}
+
+.contact__button {
+    width: 100%;
+    padding: 10px;
+    background-color: #533483;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact__button:hover {
+    background-color: #3f2a60;
+}
+
+.section-title {
+    text-align: center;
+    color: #533483;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> My Portfolio </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projs">Hands-On Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">Hi My name is <span class="purple">Deepak.</span>
+                <div> and Welcome to My Portfolio. I am a</div>
+                <span id="element"></span>
+                <div class="buttons"></div>
+                <button class="btn"><a href="https://drive.google.com/file/d/1ts7R0ywoFrCJ2w43vnP-NTqyXC-KbIO2/view?usp=sharing">Resume</a></button>
+                <button class="btn"><a href="https://github.com/Dpak2106">Visit Github</a></button>
+                <button class="btn"><a href="https://www.linkedin.com/in/deepak-pandav-64923a258/">Visit LinkedIn</a></button>
+            </div>
+            <div class="rightSection"><img src="devloper.png" alt=""></div>
+        </section>
+        <hr>
+        <section class="secondSection" id="projs">
+            <span class="text-gray">My Hands-on</span>
+            <h1>Project </h1>
+            <div class="box">
+                <div class="vertical"><img class="image-top" src="developer_icon.png" alt="">
+                    <div class="vertical-title">Stock Price Prediction by Python
+                    </div>
+                    <div class="vertical-desc"> In this project, I had to use Python to create a
+                        website. For providing scientific computing, data
+                        analysis, and higher-level mathematics wrapped in
+                        Python, I used the NUMPY library, together with the
+                        STREAMLIT, PLOTLY, and PROPHET libraries. I use
+                        STREAMLIT. Set up a tool and building blocks that
+                        make it easy to quickly develop interactive web
+                        pages. I use the PROPHET library for time series
+                        forecast data that includes seasonality, intensity,
+                        and holiday effects. The PLOTLY library is what I use
+                        for effective data visualisation and distracting
+                        charts, graphs, and dashboards in Python</div>
+                </div>
+                <div class="vertical"><img class="image-top" src="developer_icon.png" alt="">
+                    <div class="vertical-title">Railway Ticket Reservation web site by ASP.NET
+                    </div>
+                    <div class="vertical-desc"> In this project,I used Asp.net to design the website for this project.
+                        In that, I built a web form, a GUI, and a database
+                        link with MySql. I input the train information,
+                        including the date, time, and available day, on the
+                        dashboard. I developed a login webform where I
+                        collected user information.</div>
+                </div>
+                <div class="vertical"><img class="image-top" src="developer_icon.png" alt="">
+                    <div class="vertical-title">E-commerce web site
+                    </div>
+                    <div class="vertical-desc"> In this project, I have used HTML and CSS to create a web page for this
+                        project that features a wide variety of products, including
+                        shoes, t-shirts, watches, and smartphones. In this project,
+                        I employed several tags for creating online forms and
+                        CSS to design them with data links that leverage SQL
+                        databases. I also created a web form, a registration form,
+                        a login form, and a dashboard.
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="developer_icon.png" alt="">
+                    <div class="vertical-title">Published Research Paper on Haptic Technology
+                    </div>
+                    <div class="vertical-desc"> In this research, I investigate haptic technology, including
+                        its nature, workings, applications for AI tools, and
+                        algorithms. I also look into how it is used to its full
+                        potential in a number of industries, including medicine,
+                        business, defence, and education.</div>
+                </div>
+
+                <div class="vertical"><img class="image-top" src="developer_icon.png" alt="">
+                    <div class="vertical-title">Online Examination System by (php)
+                    </div>
+                    <div class="vertical-desc">The objective test administration process over the internet is
+                        facilitated by the web-based online examination system project, which was created using PHP and
+                        MySQL.
+                        Users can register for tests and get special user credentials using the online examination
+                        system. Users are typically examinees. To access the exam interface and log into the system, use
+                        these credentials. After logging in, the system displays the exam questions to the user, who has
+                        a set amount of time to submit their responses.</div>
+                </div>
+                <div class="vertical"><img class="image-top" src="developer_icon.png" alt="">
+                    <div class="vertical-title">My Portfolio Web Site
+                    </div>
+                    <div class="vertical-desc">I use my knowledge of HTML, CSS, AND JavaScript.
+                        In this project, I use a variety of HTML tags to create a web page and CSS to design the
+                        website.</div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input" required>
+                    <input type="mail" placeholder="Email" class="contact__input" required>
+                    <textarea name="" id="" placeholder="Message" cols="0" rows="10" class="contact__input" required></textarea>
+                    <input type="button" value="Submit" onclick="clicked()" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        function clicked() {
+            // Get the form elements
+            const name = document.querySelector('input[type="text"]').value;
+            const email = document.querySelector('input[type="mail"]').value;
+            const message = document.querySelector('textarea').value;
+
+            // Check if all fields are filled
+            if (name && email && message) {
+                alert("Your Message is sent successfully..!!");
+            }
+            else {
+                alert("Please fill out all fields before submitting.");
+            }
+        }
+    </script>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Its My Portfolio</h3>
+            </div>
+        
+            <div class="footer-forth">
+                <UL>
+                    <LI><a href="#home">Home</a></LI>
+                    <LI><a href="#projs">Hands-On Projects</a></LI>
+                    <LI><a href="#contact">Contact Me</a></LI>
+                </UL>
+            </div>
+        </div>
+        <div class="footer-right">
+            Copyright &#169; www.deepak's_portfolio.com |all right reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [ 'Android Developer','Java Developer','.Net Developer', 'Data Analyst','Web developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
